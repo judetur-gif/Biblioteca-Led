@@ -1,0 +1,23 @@
+/*
+TODO - Autor: Anderson Pires de Almeida Junior
+TODO - Programa: Piscar continuamente o Led 
+TODO - Descrição: Utilização dos Led e biblioteca
+TODO - Data: 15/04/26
+TODO - Versão: 1.0
+*/
+
+#include <Arduino.h>
+#include <LED.h>
+
+Led ledAzul(20);
+
+void setup() 
+{
+ ledAzul.piscar();
+
+}
+
+void loop() 
+{
+    ledAzul.update();
+}
